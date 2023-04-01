@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "4c34edf2-9c03-4bcc-9efb-977cb6cadef9",
+		"name": "GoLang CRUD using MongoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\": \"Eshan\",\r\n    \"lastname\": \"Gupta\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/person",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"person"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all people",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/people",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get person by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/person/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"person",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "6427fd03b06452f0ce3c30d4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete person by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/person/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"person",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "6427fd03b06452f0ce3c30d4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update person by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\": \"Eshan\",\r\n    \"lastname\": \"Gupta\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/person/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"person",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "642806c8c132ad96d43eeef4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

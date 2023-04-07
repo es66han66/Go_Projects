@@ -1,0 +1,1 @@
+Let's say that the process function contains an algorithm we need to run and is not very fast. If we process, let's say 100,000 items, the code above will run for almost three hours (process runs 100ms in the example).

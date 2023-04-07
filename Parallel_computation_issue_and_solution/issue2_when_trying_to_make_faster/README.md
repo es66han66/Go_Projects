@@ -1,0 +1,3 @@
+Instead of processing the items in serial, we dispatch a go routine for each item in the channel. We want to utilize Go’s amazing concurrency handling to help us process the data faster.
+
+By now, you probably know where we are going — the more go routines we create, the more objects we create, hence memory consumption is increasing. Furthermore, go routines needs execution time from the CPU to do the actual execution, so the fewer cores we have, the more of these objects will remain in memory waiting for execution.

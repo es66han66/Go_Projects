@@ -1,0 +1,1 @@
+To avoid this pitfall, capture the variable within the scope of the loop, thus creating a new instance yourself, and then use it however you would like.

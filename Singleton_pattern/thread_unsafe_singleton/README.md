@@ -1,0 +1,1 @@
+The Singleton pattern is implemented in Golang using a struct type and a private package-level variable that holds the only instance of the struct. The struct’s constructor function is exported and is used to return the instance of the struct.

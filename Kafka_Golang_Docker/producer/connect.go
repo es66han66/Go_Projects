@@ -5,7 +5,6 @@ import (
 	"time"
 
 	"github.com/segmentio/kafka-go"
-	"github.com/segmentio/kafka-go/snappy"
 )
 
 var writer *kafka.Writer
@@ -17,13 +16,12 @@ func Configure(kafkaBrokerUrls []string, clientId string, topic string) (w *kafk
 	}
 
 	config := kafka.WriterConfig{
-		Brokers:          kafkaBrokerUrls,
-		Topic:            topic,
-		Balancer:         &kafka.LeastBytes{},
-		Dialer:           dialer,
-		WriteTimeout:     10 * time.Second,
-		ReadTimeout:      10 * time.Second,
-		CompressionCodec: snappy.NewCompressionCodec(),
+		Brokers:      kafkaBrokerUrls,
+		Topic:        topic,
+		Balancer:     &kafka.LeastBytes{},
+		Dialer:       dialer,
+		WriteTimeout: 10 * time.Second,
+		ReadTimeout:  10 * time.Second,
 	}
 	w = kafka.NewWriter(config)
 	fmt.Println("writer connected")

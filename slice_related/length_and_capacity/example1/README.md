@@ -1,0 +1,1 @@
+we can see that the slice s is equal to []int{1}, and its capacity is calculated from the index 1 to index 4 of the original array.

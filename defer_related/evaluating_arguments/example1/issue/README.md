@@ -1,0 +1,1 @@
+the value of i is evaluated at the time the defer statement is executed, and at that time, i is still 0.

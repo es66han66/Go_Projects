@@ -1,0 +1,1 @@
+the value of writer is evaluated at the time the defer statement is defined, so the result will actually be "Hi, my name is Joe".

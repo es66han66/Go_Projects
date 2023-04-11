@@ -1,0 +1,1 @@
+1- To run, run the following command- ```go run .\main.go .\another.go```

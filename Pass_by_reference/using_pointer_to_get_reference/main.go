@@ -16,9 +16,9 @@ func main() {
 		Width:  10,
 		Height: 3,
 	}
+	fmt.Println("Height before is", rect.Height)
 
 	DoubleHeight(&rect)
 
-	fmt.Println("Width still is", rect.Width)
-	fmt.Println("Height still is", rect.Height)
+	fmt.Println("Height is", rect.Height)
 }

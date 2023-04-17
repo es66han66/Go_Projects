@@ -1,1 +1,5 @@
 mysecrets.json
+${BINARY_NAME}
+.DS_Store
+.vscode
+Makefile.windows

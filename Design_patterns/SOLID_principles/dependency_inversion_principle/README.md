@@ -1,0 +1,3 @@
+As our Research type directly uses LLM(low level module) i.e. Relationships hence it is directly depending upon how Relationships is implemented i.e. currently Relationships struct has slice of Info as its type of relations, if this slice is changed to some other data structure whole usage breaks.  
+  
+After applying DIP, we are shifting our direct dependency from Relationships struct to a interface hence no direct access to memory aka relations or LLM.

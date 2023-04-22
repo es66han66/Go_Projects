@@ -1,0 +1,1 @@
+When we have factory functions, we necessarily need not to return struct rather we can return interface that struct conforms too, this helps to encapsulate underlying struct and restrict user to modify the struct

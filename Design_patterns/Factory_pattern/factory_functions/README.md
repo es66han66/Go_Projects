@@ -1,0 +1,1 @@
+Factory function takes some input and provides a instance of object/struct with default values of those fields whose value are likely to be what is being assigned, though if the user wants, he can change the value because factory function returns struct only.

@@ -1,0 +1,1 @@
+Advantage of structual approach is that for example we made a developers factory with some salary then in case of functional approach, this salary gets fixed and we cannot alter it later but structural approach helps us in modifying it as per need.

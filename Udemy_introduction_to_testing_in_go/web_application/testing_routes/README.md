@@ -1,0 +1,1 @@
+For the routes test, we check whether all the routes we have registered are successfully registered or not.

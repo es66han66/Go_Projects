@@ -1,0 +1,1 @@
+Following usage achieves our manual input ```input := strings.NewReader(e.input)``` then ```reader := bufio.NewScanner(input)```

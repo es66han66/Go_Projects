@@ -1,0 +1,1 @@
+t.Error or t.Errorf doesn't stop test execution hence any execution below this call is executed and can result in unexpected behavior i.e. why we should use t.Fatal or t.Fatalf to stop the execution the moment some error occurs

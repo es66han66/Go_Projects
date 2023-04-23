@@ -1,0 +1,1 @@
+using os.Pipe and storing os.Stdout somewhere and reading through io.ReadAll we can achieve this.

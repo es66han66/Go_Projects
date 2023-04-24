@@ -1,0 +1,1 @@
+For testing middleware, we made a dummy request as well as dummy handler
